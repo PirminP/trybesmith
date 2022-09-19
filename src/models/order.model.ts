@@ -9,6 +9,7 @@ class OrderModel {
   }
 
   // Research: Return single JSON array -> https://dev.mysql.com/doc/refman/5.7/en/aggregate-functions.html
+  
   public async getAllOrders(): Promise<Order[]> {
     const getAll = await this.connection.execute(
       `SELECT ord.id AS id, ord.userId AS userId, JSON_ARRAYAGG(pro.id) AS productsIds
