@@ -24,17 +24,18 @@ Use the following command to run the application:
   ```
 
 ### Endpoints
-#### Login
+#### Products
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |  Login user and returns token | http://localhost:3000/login |
+  | `POST`   |  ... | http://localhost:3000/ |
+  | `GET`   |  ... | http://localhost:3000/ |
 
-The following JSON is to be entered in the request:
+The following JSON is to be entered in the request POST:
   ```
   {
-  "email": "email-registered-db-@email.com",
-  "password": "123456"
+  "name": "Espada longa",
+  "amount": "30 peças de ouro"
   }
   ```
 
@@ -42,37 +43,42 @@ The following JSON is to be entered in the request:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   | Create a new user and return token | http://localhost:3000/user |
-  | `GET`   | Returns all non-sensitive data of users | http://localhost:3000/user |
-  | `GET`   | Returns non-sensitive data of a specific user | http://localhost:3000/user/:id |
-
-The following JSON is to be entered in the request PUT & POST:
-  ```
-  {
-    "displayName": "User example",
-    "email": "user-example@email.com",
-    "password": "123456",
-    "image": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
-  }
-  ```
-
-#### Categories
-
-  | Method     | Functionality | URL |
-  | ----------- | ----------- | ----------- |
-  | `POST`   | Add new category | http://localhost:3000/categories |
-  | `GET`   | Returns all registered categories | http://localhost:3000/categories |
+  | `POST`   | ... | http://localhost:3000/ |
 
 The following JSON is to be entered in the request POST:
   ```
   {
-    "name": "Typescript"
+  "username": "MAX",
+  "classe": "swordsman",
+  "level": 10,
+  "password": "SavingPeople"
   }
   ```
 
-#### Post
+#### Login
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   |  Returns all posts containing created user and categories| http://localhost:3000/post |
-  | `GET`   | Returns specific post containing created user and categories | http://localhost:3000/post/:id |
+  | `POST`   | ... | http://localhost:3000/ |
+
+The following JSON is to be entered in the request POST:
+  ```
+  {
+  "username": "MAX",
+  "password": "SavingPeople"
+  }
+  ```
+
+#### Orders
+
+  | Method     | Functionality | URL |
+  | ----------- | ----------- | ----------- |
+  | `GET`   | ... | http://localhost:3000/ |
+  | `POST`   | ... | http://localhost:3000/ |
+
+The following JSON is to be entered in the request POST:
+  ```
+  {
+  "productsIds": [1, 2]
+  }
+  ```
