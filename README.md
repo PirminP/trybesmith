@@ -12,10 +12,8 @@
 `Note:` The `Trybesmith.sql` file contains the queries that create and populate MySQL database.
   
   ```
-  npm run prestart // create data bank & migrations
-  npm run seed // populate data bank
   docker-compose up -d // start application with docker
-  docker attach blogs_api
+  docker exec -it trybesmith bash
   npm install // install dependencies
   docker-compose down // stop application
   ```
@@ -23,8 +21,6 @@
 Use the following command to run the application:
   ```
   npm start // start application
-  ou
-  npm run debug // start application in development environment
   ```
 
 ### Endpoints
