@@ -1,5 +1,3 @@
-# :construction: README em construção ! :construction:
-
 # Project TrybeSmith
 #### This project contains an API creating items and sales for a medieval product store, using TypeScript.
 
