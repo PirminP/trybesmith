@@ -43,7 +43,7 @@ The following JSON is to be entered in the request POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   | ... | http://localhost:3000/ |
+  | `POST`   | Registers new user and returns token | http://localhost:3000/users |
 
 The following JSON is to be entered in the request POST:
   ```
