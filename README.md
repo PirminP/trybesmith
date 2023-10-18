@@ -28,7 +28,7 @@ Use the following command to run the application:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   |  ... | http://localhost:3000/products |
+  | `POST`   | Register a new product | http://localhost:3000/products |
   | `GET`   |  ... | http://localhost:3000/ |
 
 The following JSON is to be entered in the request POST:
