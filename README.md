@@ -43,7 +43,7 @@ The following JSON is to be entered in the request POST:
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `POST`   | Registers new user and returns token | http://localhost:3000/users |
+  | `POST`   | Register new user and returns token | http://localhost:3000/users |
 
 The following JSON is to be entered in the request POST:
   ```
@@ -55,30 +55,9 @@ The following JSON is to be entered in the request POST:
   }
   ```
 
-#### Login
-
-  | Method     | Functionality | URL |
-  | ----------- | ----------- | ----------- |
-  | `POST`   | ... | http://localhost:3000/ |
-
-The following JSON is to be entered in the request POST:
-  ```
-  {
-  "username": "MAX",
-  "password": "SavingPeople"
-  }
-  ```
-
 #### Orders
 
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
-  | `GET`   | ... | http://localhost:3000/ |
-  | `POST`   | ... | http://localhost:3000/ |
+  | `GET`   | Returns a list of all orders | http://localhost:3000/orders |
 
-The following JSON is to be entered in the request POST:
-  ```
-  {
-  "productsIds": [1, 2]
-  }
-  ```
