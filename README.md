@@ -29,7 +29,7 @@ Use the following command to run the application:
   | Method     | Functionality | URL |
   | ----------- | ----------- | ----------- |
   | `POST`   | Register a new product | http://localhost:3000/products |
-  | `GET`   |  ... | http://localhost:3000/ |
+  | `GET`   | Returns a list of all registered products | http://localhost:3000/products |
 
 The following JSON is to be entered in the request POST:
   ```
